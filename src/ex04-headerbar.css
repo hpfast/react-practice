@@ -1,0 +1,6 @@
+.header-bar {
+  border-bottom: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
