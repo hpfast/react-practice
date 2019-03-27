@@ -4,12 +4,17 @@ import './App.css';
 
 class App extends Component {
   constructor(props) {
-    super(props)
+    super(props);
+    this.state = {
+      buttonClickMessage: 'Button has not been clicked.'
+    };
     this.handleChange = this.handleChange.bind(this)
   }
 
   handleChange(event) {
-    alert('you clicked the button!')
+    this.setState({
+      buttonClickMessage: 'Button has been clicked!'
+    });
   }
   render() {
     return (
@@ -18,6 +23,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <button onClick={this.handleChange}>Click me!</button>
+        <p>{this.state.buttonClickMessage}</p>
       </div>
     );
   }
