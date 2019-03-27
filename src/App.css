@@ -31,3 +31,9 @@
     transform: rotate(360deg);
   }
 }
+
+.liked {
+  color: white;
+  background-color: lightblue;
+  font-weight: bold;
+}
