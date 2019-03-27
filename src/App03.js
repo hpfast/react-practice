@@ -29,6 +29,7 @@ class App extends Component {
           className={buttonClassName}>
           {buttonText}
         </button>
+        {this.state.liked && <p>You liked this.</p>}
       </div>
     );
   }

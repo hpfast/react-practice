@@ -9,7 +9,8 @@ class HeaderBar extends Component {
     return (
       <div className="header-bar">
         <button
-          onClick={this.props.handleChange}>
+          onClick={this.props.handleChange}
+        >
           {buttonText}
         </button>
       </div>
