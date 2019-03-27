@@ -1,0 +1,7 @@
+{
+  "messages": [
+    { "read" : false, "subject": "Save 20% on React Books!"},
+    { "read" : false, "subject": "Status project X?"},
+    { "read" : false, "subject": "I have 20 million Great British Pounds that I cannot use"}
+  ]
+}
