@@ -72,7 +72,7 @@ Het is met React vrij eenvoudig om een 'loading' indicator te tonen totdat de da
 ![server data](img/06_server-data.gif)
 
 ### 7. Two-way state binding, meerdere views op de state
-Voeg een 'unread messages' indicator toe aan de inbox. Het toont het aantal ongelezen berichten. Als je op een bericht klikt, vermindert het getal. Je kan ook in 1 keer alles ongelezen maken door op het icoontje te klikken.
+Voeg een 'unread messages' indicator toe aan de inbox. Het toont het aantal ongelezen berichten. Als je op een bericht klikt, vermindert het getal. Je kan ook in 1 keer alles gelezen maken door op het icoontje te klikken.
 
 ![two-way state](img/07_two-way-state.gif)
 
