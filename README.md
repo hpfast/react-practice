@@ -42,3 +42,29 @@ import Content from './ex04-content';
 Waar het in deze oefening om gaat is dat je een klik binnen de Header Bar component kan registreren en ervoor zorgen dat iets in een ander component verandert. Hint: 'lift state up'.
 
 ![lift state up](img/04_lift-state-up.gif)
+
+
+### 5. Render een lijst van elementen
+
+Gebruik het volgende array in je state en render het als lijst:
+
+```javascript
+messages: [
+  { read: false, sender: "Programming Books Central", subject: "Save 20% on React Books!"},
+  { read: false, sender: "Alice B.", subject: "Status project X?"},
+  { read: false, sender: "Widow of King A. Nadjamo", subject: "I have 20 million Great British Pounds in Bank Account for You"}
+]
+```
+
+![render a list](img/05_list.png)
+
+### 6. Haal data van een server en render het
+Pas oefening 5 aan zodat je de data ophaalt van dit url:
+
+```
+https://raw.githubusercontent.com/hpfast/react-practice/master/messages.json
+```
+
+Hint: kijk naar 'Lifecycle Methods'.
+
+Het is met React vrij eenvoudig om een 'loading' indicator te tonen totdat de data is geladen:

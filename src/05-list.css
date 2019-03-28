@@ -1,0 +1,24 @@
+.email-list {
+  text-align: left;
+  padding: 0 5px;
+}
+
+.email-list-header, .email-list-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.email-list-header {
+  font-weight: bold;
+}
+
+.email-list-row span {
+  display: inline-block;
+}
+
+.email-list span:first-child {
+  width: 30vw;
+}
+

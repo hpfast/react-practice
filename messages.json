@@ -1,7 +1,7 @@
 {
   "messages": [
-    { "read" : false, "subject": "Save 20% on React Books!"},
-    { "read" : false, "subject": "Status project X?"},
-    { "read" : false, "subject": "I have 20 million Great British Pounds that I cannot use"}
+    { "read": false, "sender": "Programming Books Central", "subject": "Save 20% on React Books!"},
+    { "read": false, "sender": "Alice B.", "subject": "Status project X?"},
+    { "read": false, "sender": "Widow of King A. Nadjamo", "subject": "I have 20 million Great British Pounds in Bank Account for You"}
   ]
 }

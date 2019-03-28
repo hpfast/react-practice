@@ -74,6 +74,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
+  <link rel="stylesheet" href="gh.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -108,5 +109,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <figure>
 <img src="img/04_lift-state-up.gif" alt="lift state up" /><figcaption>lift state up</figcaption>
 </figure>
+<h3 id="render-een-lijst-van-elementen">5. Render een lijst van elementen</h3>
+<p>Gebruik het volgende array in je state en render het als lijst:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1">messages<span class="op">:</span> [</a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="op">{</span> <span class="dt">read</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">sender</span><span class="op">:</span> <span class="st">&quot;Programming Books Central&quot;</span><span class="op">,</span> <span class="dt">subject</span><span class="op">:</span> <span class="st">&quot;Save 20% on React Books!&quot;</span><span class="op">},</span></a>
+<a class="sourceLine" id="cb2-3" title="3">  <span class="op">{</span> <span class="dt">read</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">sender</span><span class="op">:</span> <span class="st">&quot;Alice B.&quot;</span><span class="op">,</span> <span class="dt">subject</span><span class="op">:</span> <span class="st">&quot;Status project X?&quot;</span><span class="op">},</span></a>
+<a class="sourceLine" id="cb2-4" title="4">  <span class="op">{</span> <span class="dt">read</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">sender</span><span class="op">:</span> <span class="st">&quot;Widow of King A. Nadjamo&quot;</span><span class="op">,</span> <span class="dt">subject</span><span class="op">:</span> <span class="st">&quot;I have 20 million Great British Pounds in Bank Account for You&quot;</span><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-5" title="5">]</a></code></pre></div>
+<figure>
+<img src="img/05_list.png" alt="render a list" /><figcaption>render a list</figcaption>
+</figure>
+<h3 id="haal-data-van-een-server-en-render-het">6. Haal data van een server en render het</h3>
+<p>Pas oefening 5 aan zodat je de data ophaalt van dit url:</p>
+<pre><code>https://raw.githubusercontent.com/hpfast/react-practice/master/messages.json</code></pre>
+<p>Hint: kijk naar ‘Lifecycle Methods’.</p>
+<p>Het is met React vrij eenvoudig om een ‘loading’ indicator te tonen totdat de data is geladen:</p>
 </body>
 </html>
