@@ -75,3 +75,9 @@ Het is met React vrij eenvoudig om een 'loading' indicator te tonen totdat de da
 Voeg een 'unread messages' indicator toe aan de inbox. Het toont het aantal ongelezen berichten. Als je op een bericht klikt, vermindert het getal. Je kan ook in 1 keer alles ongelezen maken door op het icoontje te klikken.
 
 ![two-way state](img/07_two-way-state.gif)
+
+
+## Geavanceerde oefeningen
+
+* bouw voorbeeld 6 (data ophalen) gebruik makende van de nieuwe [Hooks API](https://reactjs.org/docs/hooks-intro.html) van React.
+* probeer hoe je state bij kan houden met [MobX](https://mobx.js.org) of [Redux](https://redux.js.org).
