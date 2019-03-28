@@ -77,8 +77,9 @@ Voeg een 'unread messages' indicator toe aan de inbox. Het toont het aantal onge
 ![two-way state](img/07_two-way-state.gif)
 
 
-## Geavanceerde oefeningen
+## Verdere oefeningen
 
 * bouw voorbeeld 6 (data ophalen) gebruik makende van de nieuwe [Hooks API](https://reactjs.org/docs/hooks-intro.html) van React.
 * probeer hoe je state bij kan houden met [MobX](https://mobx.js.org) of [Redux](https://redux.js.org).
 * Doe de opdrachten maar schrijf de code Test-Driven: schrijf eerst (falende) tests en dan de code om de tests te laten slagen!
+* Knip de screenshot van de eindopdracht op in componenten; ga door totdat je de kleinst mogelijke componenten hebt geidentificeerd. Schets een boomstructuur voor een React broncode voor deze applicatie.
