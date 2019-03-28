@@ -81,3 +81,4 @@ Voeg een 'unread messages' indicator toe aan de inbox. Het toont het aantal onge
 
 * bouw voorbeeld 6 (data ophalen) gebruik makende van de nieuwe [Hooks API](https://reactjs.org/docs/hooks-intro.html) van React.
 * probeer hoe je state bij kan houden met [MobX](https://mobx.js.org) of [Redux](https://redux.js.org).
+* Doe de opdrachten maar schrijf de code Test-Driven: schrijf eerst (falende) tests en dan de code om de tests te laten slagen!
