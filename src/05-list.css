@@ -22,3 +22,8 @@
   width: 30vw;
 }
 
+
+.unread {
+  font-style: italic;
+  font-weight: bold;
+}
