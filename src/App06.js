@@ -40,7 +40,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log('what');
     fetch("https://raw.githubusercontent.com/hpfast/react-practice/master/messages.json")
     .then(response => response.json())
     .then(data => this.setState({
