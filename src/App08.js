@@ -30,10 +30,11 @@ class DatabaseController {
       messagingSenderId: "660257929986"
     };
     firebase.initializeApp(config);
+    this.dbconn = firebase.firestore();
   }
-    connectToDatabase() {
-      return firebase.firestore();
-    }
+  emailCollection() {
+    return this.dbconn.collection('emails')
+  }
 }
 
 const db = new DatabaseController();
@@ -56,15 +57,17 @@ class Inbox extends Component {
 class App extends Component {
   constructor(props) {
     super(props);
-    this.db = db.connectToDatabase();
+    this.db = db;
+    this.emailCollection = this.db.emailCollection();
     this.state = {
       messages: [],
       fetching_data: true
     };
   }
 
+
   componentDidMount() {
-    this.db.collection('emails').get().then(snapshot => {
+    this.emailCollection.get().then(snapshot => {
       let data = snapshot.docs.map(doc => doc.data());
       this.setState({
         messages:data,
@@ -78,6 +81,16 @@ class App extends Component {
         //fetching_data: false
       //})
     //)
+
+  }
+
+  openEmail(emailid){
+    this.db.getEmail(emailid).then( response => {
+      this.setState({
+        viewingSingleEmail: true,
+        currentEmail: emailid
+      })
+    })
 
   }
 
