@@ -57,8 +57,7 @@ class Inbox extends Component {
 class App extends Component {
   constructor(props) {
     super(props);
-    this.db = db;
-    this.emailCollection = this.db.emailCollection();
+    this.emailCollection = db.emailCollection();
     this.state = {
       messages: [],
       fetching_data: true
