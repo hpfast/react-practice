@@ -6,15 +6,6 @@ import './App.css';
 import './05-list.css';
 
 
-const config = {
-    apiKey: process.env.REACT_APP_APIKEY,
-    authDomain: "email-box-78872.firebaseapp.com",
-    databaseURL: "https://email-box-78872.firebaseio.com",
-    projectId: "email-box-78872",
-    storageBucket: "email-box-78872.appspot.com",
-    messagingSenderId: "660257929986"
-  };
-firebase.initializeApp(config);
 
 
 class InboxItem extends Component {
@@ -27,6 +18,25 @@ class InboxItem extends Component {
     )
   }
 }
+
+class DatabaseController {
+  constructor() {
+    const config = {
+      apiKey: process.env.REACT_APP_APIKEY,
+      authDomain: "email-box-78872.firebaseapp.com",
+      databaseURL: "https://email-box-78872.firebaseio.com",
+      projectId: "email-box-78872",
+      storageBucket: "email-box-78872.appspot.com",
+      messagingSenderId: "660257929986"
+    };
+    firebase.initializeApp(config);
+  }
+    connectToDatabase() {
+      return firebase.firestore();
+    }
+}
+
+const db = new DatabaseController();
 
 class Inbox extends Component {
   render() {
@@ -46,7 +56,7 @@ class Inbox extends Component {
 class App extends Component {
   constructor(props) {
     super(props);
-    this.db = firebase.firestore();
+    this.db = db.connectToDatabase();
     this.state = {
       messages: [],
       fetching_data: true
